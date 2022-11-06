@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url('resources/img/2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    /* padding-top:200px ; */
+}
+.card{
+    text-align: center;
+    padding: 30px;
+    background:#000000d0;
+    border-radius: 30px;
+    width: 400px;
+    height: 350px;
+    color: white;
+}
+.search input{
+    font-family:inherit;
+    border: none;
+    outline: none;
+    padding:0.8em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    width:12.5rem;
+}
+.card .search .btn {
+    border: none;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.card .weather .temp{
+    transition: all 0.2s ease-in-out;
+}
+.card .weather .temp:hover{
+    color:peru;
+    font-size: 40px;
+}
+.card .search .btn:hover{
+    background: #7c7c7c6b;
+}
+.search input .search-bar{
+    background-color:red;
+}
+.card div{
+    padding-top:10px ;
+}
+.card .weather i{
+    color: white;
+    padding-right: 5px;
+}
+.desc{
+    text-transform: capitalize;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    /* position: absolute; */
+}
+
+footer {
+    font-family: inherit;
+    position: absolute;
+    bottom: 10px;
+}
+footer a{
+    color: crimson;
+    text-decoration: none;
+}
